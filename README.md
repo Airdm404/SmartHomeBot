@@ -15,15 +15,32 @@ Additionally, it supports the following Slack slash commands:
 * /categories - Lists all available categories
 
 
+# Setting up enviroments
+
+## Slack Setup
+* Bot Token Scopes: chat:write, channels:history, commands
+
+## Python Setup
+* pip3 install slackclient for slack sdk
+* pip3 install python-dotenv for python-dotenv
+* pip3 install slackeventsapi for slackeventsapi
+* pip3 install flask for flask
+
+## Local Server Setup
+* Install ngrok:https://ngrok.com/download
+* run ngrok http 5002 to start ngrok and copy the https url
+* paste the url in the request url field when you enable events under events subscriptions followed by "/slack/events"
+* save changes and reinstall app into work place
+
+
 
 # Usage
 * Set the environment variables in .env file(Slack bot token and sign secret):\
     SLACK_BOT_TOKEN=YOUR_BOT_USER_OAuth_Token\
     SIGN_SECRET=YOUR_SIGNING_SECRET
 * Run the bot:
-  python3 bot.py
-
-* Open your Slack workspace and start interacting with the bot.
+  python3 main.py
+* Open your Slack workspace, add bot to a channel and start interacting with the bot.
 
 # Libraries/Modules Used
 * Flask - A lightweight WSGI web application framework.
