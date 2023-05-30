@@ -16,9 +16,9 @@ Additionally, it supports the following Slack slash commands:
 
 
 
-#Usage
-* Set the environment variables in .env file(Slack bot token and sign secret):
-    SLACK_BOT_TOKEN=YOUR_BOT_USER_OAuth_Token
+# Usage
+* Set the environment variables in .env file(Slack bot token and sign secret):\
+    SLACK_BOT_TOKEN=YOUR_BOT_USER_OAuth_Token\
     SIGN_SECRET=YOUR_SIGNING_SECRET
 * Run the bot:
   python3 bot.py
